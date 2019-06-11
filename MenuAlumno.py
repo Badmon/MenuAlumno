@@ -6,13 +6,25 @@ lista = list()
 class Alumno:
     rut =""
     nombre = ""
-    edad= 0
+    edad=0
 
 def registrarAlumno():
     print ("Registro de Alummnos")
+    a = Alumno()
+
+    a.rut = str(input("Ingrese rut: "))
+    a.nombre = str(input("Ingrese nombre: ")
+    a.edad = input("Ingrese edad: ")
+
+
+    lista.append(a)
 
 def listarAlumno():
     print ("Lista de Alummnos")
+
+    for a in lista:
+        print (a.rut, "-", a.nombre, "-", a.edad, "-")
+
 
 def buscarAlumno():
     print ("Buscar Alumnos")
@@ -40,6 +52,9 @@ def menu():
             buscarAlumno()
         elif op == 4:
             salir()
+            #exit //key para salir
+            #exit() //key para salir
+
 
 
 menu()
